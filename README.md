@@ -64,12 +64,18 @@
 ### Key Features <a name="key-features"></a>
 
 - **Log into the application**
-- **Create a post for the application users**
-- **Interact with the posts (Like post or comment on Post)**
+- **Create a category**
+- **Add transaction**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
+### Live demo 
+
+Here is a live [demo](https://budgetracker.onrender.com) of the application
+
+### Video presentation
+Here is the link to the video presentation of the [project](https://www.loom.com/share/d79f807b7a134dfa9e73e3f4a864f703?sid=0629c382-c4aa-4891-85c4-20ec766d0465)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -86,7 +92,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```sh
-  https://github.com/anyepeter/rails-budget.git
+  https://github.com/citec-47/rails-budget.git
 ```
 
 ### Install
@@ -95,8 +101,10 @@ Install this project with:
 
 ```sh
   cd rails-budget
-  gem install
-
+  bundle install 
+  rails db:create
+  rails db:schema:load
+```
 ### Usage
 
 To run the project, execute the following command:
@@ -120,8 +128,6 @@ To run tests, run the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **Ndonyi**
-
 👤 **Ndonyi Maurice Djam**
 
 - GitHub: [@citec-47](https://github.com/citec-47)
@@ -137,7 +143,7 @@ To run tests, run the following command:
 
 
 - [ ] **A better graphical user interface**
-- [ ] **A signup functionality**
+- [ ] **Add a credit card**
 - [ ] **A chat functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -165,7 +171,8 @@ If you like this project, go ahead and give it a star. It is very much appreciat
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 
-I would like to thank Microverse for providing me with the reading material that helped me during this project development.
+- I would like to thank Microvers for providing this great opportunity and for the project guide as well 👏
+- Huge appriciation to Gregoire Vella for providing design system guidelines since this project is built upon thatopment.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
