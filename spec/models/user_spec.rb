@@ -2,8 +2,8 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   before(:all) do
-    @User_one = User.new(name: 'peter anye', email: 'peter@gmail.com', password:12345678, password_confirmation: 12345678)
-    
+    @User_one = User.new(name: 'peter anye', email: 'peter@gmail.com', password: 12_345_678,
+                         password_confirmation: 12_345_678)
   end
   context 'validations' do
     it 'is valid with valid attributes' do

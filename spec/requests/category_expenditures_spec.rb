@@ -76,7 +76,6 @@ RSpec.describe '/category_expenditures', type: :request do
         end.to change(CategoryExpenditure, :count).by(0)
       end
 
-
       it "renders a response with 422 status (i.e. to display the 'new' template)" do
         post category_expenditures_url, params: { category_expenditure: invalid_attributes }
         expect(response).to have_http_status(:unprocessable_entity)
