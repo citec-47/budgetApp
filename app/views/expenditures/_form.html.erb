@@ -1,0 +1,33 @@
+<%= form_with(scope: :expenditure, url: category_expenditures_path) do |form| %>
+  <% if expenditure.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(expenditure.errors.count, "error") %> prohibited this expenditure from being saved:</h2>
+
+      <ul>
+        <% expenditure.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+   <% @category.each do |category| %>
+    <div class="form-check">
+      <%= form.check_box :category_ids, { multiple: true }, category.id, nil %>
+      <%= form.label :category_ids, category.name, class: "form-check-label" %>
+    </div>
+<% end %>
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.label :amount, style: "display: block" %>
+    <%= form.text_field :amount %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
