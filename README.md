@@ -120,7 +120,7 @@ To run tests, run the following command:
 ## 👥 Authors <a name="authors"></a>
 
 
-👤 **ANYE PETER**
+👤 **Ndonyi**
 
 👤 **Ndonyi Maurice Djam**
 
