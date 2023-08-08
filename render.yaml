@@ -2,7 +2,8 @@ databases:
   - name: budget
     ipAllowList: []
     databaseName: budget
-    user: postgres
+    user: postgres  
+    password: admin   
 
 services:
   - type: web
@@ -12,6 +13,6 @@ services:
     startCommand: "bundle exec rails s"
     envVars:
       - key: DATABASE_URL
-        value: "postgres://postgres:admin@budget:5432/budget"  # Adjust connection URL
+        value: "postgres://admin_user:admin@budget:5432/budget" 
       - key: RAILS_MASTER_KEY
         sync: false
