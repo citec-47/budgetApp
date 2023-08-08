@@ -1,5 +1,5 @@
 databases:
-  - name: postgres
+  - name:  budget
     ipAllowList: []
     databaseName: budget
     user: postgres
