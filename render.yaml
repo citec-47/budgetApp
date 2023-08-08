@@ -3,7 +3,7 @@ databases:
     ipAllowList: []
     databaseName: budget
     user: postgres
-    password: admin  # Adding the password for the database user
+    password: admin  
 
 services:
   - type: web
