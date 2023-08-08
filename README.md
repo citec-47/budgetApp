@@ -1,4 +1,4 @@
-# Rich Dad Wallet App
+#  Budget App
 
 <a name="readme-top"></a>
 
