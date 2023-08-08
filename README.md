@@ -75,7 +75,7 @@
 Here is a live [demo](https://budgetracker.onrender.com) of the application
 
 ### Video presentation
-Here is the link to the video presentation of the [project](https://www.loom.com/share/d79f807b7a134dfa9e73e3f4a864f703?sid=0629c382-c4aa-4891-85c4-20ec766d0465)
+Here is the link to the video presentation of the [project](https://www.loom.com/share/92049c4c16d940ed8973bdc5112e5358?sid=73241630-6b56-4743-bd9f-0d0b3ad1d97b)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
