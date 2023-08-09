@@ -1,11 +1,11 @@
 services:
- - type: redis
-   name: cache
-   ipAllowList: [] 
-   plan: free 
-   maxmemoryPolicy: allkeys-lfu 
- - type: web 
-   name: budget
+  - type: redis
+    name: cache
+    ipAllowList: [] 
+    plan: free 
+    maxmemoryPolicy: allkeys-lfu 
+  - type: web 
+    name: budget
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
