@@ -1,11 +1,11 @@
-databases:
-  - name: budget
-    databaseName: budget
-    user: budget
-
 services:
-  - type: web
-    name: budget
+ - type: redis
+   name: cache
+   ipAllowList: [] 
+   plan: free 
+   maxmemoryPolicy: allkeys-lfu 
+ - type: web 
+   name: budget
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
@@ -16,9 +16,8 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-
-  - type: redis
-    name: budget-redis
-    plan: free
-    ipAllowlist:
-      - "0.0.0.0/0"  
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: cache
+          property: connectionString
