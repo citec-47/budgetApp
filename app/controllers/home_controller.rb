@@ -1,7 +1,3 @@
 class HomeController < ApplicationController
-  def index
-    return unless current_user
-
-    redirect_to '/'
-  end
+  def splash; end
 end

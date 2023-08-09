@@ -1,28 +1,21 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'Check user validity' do
-    subject do
-      User.new(name: Faker::Name.unique.name,
-               email: Faker::Internet.email,
-               password: '1234567', password_confirmation: '1234567')
+  before(:all) do
+    @user_one = User.new(name: 'anye', email: 'prteter@gmail.com', password: 12_345_678,
+                         password_confirmation: 12_345_678)
+  end
+  context 'validations' do
+    it 'is valid with valid attributes' do
+      expect(@user_one).to be_valid
     end
-  end
-
-  before { subject.save }
-
-  it 'should have a valid name' do
-    subject.name = nil
-    expect(subject).to_not be_valid
-  end
-
-  it 'should have a valid email' do
-    subject.email = nil
-    expect(subject).to_not be_valid
-  end
-
-  it 'should have a name' do
-    subject.name = nil
-    expect(subject).to_not be_valid
+    it 'is not valid without a name' do
+      @user_one.name = ''
+      expect(@user_one).to_not be_valid
+    end
+    it 'Is should valid the post counter' do
+      @user_one.email = ''
+      expect(@user_one).to_not be_valid
+    end
   end
 end
