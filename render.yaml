@@ -1,6 +1,5 @@
 databases:
   - name: budget
-    ipAllowlist: []
 
 services:
   - type: web
@@ -18,6 +17,5 @@ services:
         sync: false
   - type: redis
     name: redis
-    ipAllowlist: []
     plan: free
     maxmemoryPolicy: noeviction
