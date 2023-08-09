@@ -19,4 +19,6 @@ services:
 
   - type: redis
     name: budget-redis
-    plan: redis:micro
+    plan: redis:small
+    ipAllowlist:
+      - "0.0.0.0/0"  
