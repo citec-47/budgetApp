@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 # Updated Ruby version
-ruby '3.2.2'
+ruby '3.0.5'
 
 # Gems compatible with Ruby 3.2.2
 gem 'cancancan', '~> 3.2' # Specify a version compatible with Ruby 3.2.2
