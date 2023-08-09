@@ -276,10 +276,10 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
-  cancancan
+  cancancan (~> 3.2)
   capybara
   debug
-  devise
+  devise (~> 4.8)
   importmap-rails
   jbuilder
   pg (~> 1.1)
