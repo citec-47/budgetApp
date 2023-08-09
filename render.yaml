@@ -1,11 +1,11 @@
+databases:
+  - name: budget
+    databaseName: postgrest_vr4y
+    user: postgrest_vr4y_user
+
 services:
-  - type: redis
-    name: cache
-    ipAllowList: [] 
-    plan: free 
-    maxmemoryPolicy: allkeys-lfu 
-  - type: web 
-    name: budget
+  - type: web
+    name: onrender
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
@@ -16,8 +16,3 @@ services:
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
-      - key: REDIS_URL
-        fromService:
-          type: redis
-          name: cache
-          property: connectionString
