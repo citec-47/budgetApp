@@ -72,10 +72,10 @@
 <!-- LIVE DEMO -->
 ### Live demo 
 
-Here is a live [demo](https://budgetracker.onrender.com) of the application
+Here is a live [demo](https://onrent.onrender.com) of the application
 
 ### Video presentation
-Here is the link to the video presentation of the [project](https://www.loom.com/share/92049c4c16d940ed8973bdc5112e5358?sid=73241630-6b56-4743-bd9f-0d0b3ad1d97b)
+Here is the link to the video presentation of the [project](https://www.loom.com/share/92049c4c16d940ed8973bdc5112e5358?sid=cf5786f2-a811-4021-8592-580ab9ad200f)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
